@@ -1,7 +1,7 @@
 CWD=`pwd`
 tar -xzvf libevent-*.tar.gz                 # libevent's gziped tar.
 cd libevent-*/
-./configure --prefix=$HOME/.local --enable-shared
+./configure --prefix=$HOME/.local --enable-shared   # Might need to add a --disable-openssl if an error shows up.
 make && make install
 
 cd $CWD
